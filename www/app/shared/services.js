@@ -177,7 +177,8 @@
                     if (range == "NaN00-NaN00") {
                         range = "";
                     }
-                    var link = philoConfig.dictionary_lookup + "?docyear=" + range + "&strippedhw=" + selection;
+                    //var link = philoConfig.dictionary_lookup + "?docyear=" + range + "&strippedhw=" + selection;
+                    var link = philoConfig.dictionary_lookup + selection;
                     $window.open(link);
                 }
             }

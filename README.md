@@ -15,13 +15,13 @@ site
 - and in two minor code edits necessary to extend the Philologic 
 dictionary-word lookup functionality (accessed by highlighting a word in the 
 concordance or KWIC views and then pressing "d") to use the 1700-1950 Danish 
-historical dictionary.
+historical dictionary
 
 ## Modified installation
 
 To make use of the dictionary-lookup modifications (see above), it is advised
-to clone this repository and then follow the standard installation instructions
-from the [documentation](https://artfl-project.github.io/PhiloLogic4/).
+to clone this repository and then run the [install.sh](https://artfl-project.github.io/PhiloLogic4/) script from within the cloned repo.
+
 As an alternative, one simply could install the the stock Philologic 4.6 and 
 then manually apply the code changes from [this commit](https://github.com/ARTFL-Project/PhiloLogic4/commit/2ffbd4b99e3eafa65e657dcd1a4dbe3957974dc3).
 
@@ -54,7 +54,9 @@ To load these files into the Philologic4 installation, cd to the
 After the files have been loaded, be sure to copy the `web_config.cfg` file
 from `corpora/brandes/` to the `data/` folder in the main Philologic site
 install folder; by default this location will be something like 
-`/var/www/html/philologic/brandes/data/`. The site should now be ready for use.
+`/var/www/html/philologic/brandes/data/`.
+
+The site should now be ready for use.
 
 ===========
 

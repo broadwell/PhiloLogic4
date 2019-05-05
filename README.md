@@ -1,14 +1,18 @@
-### Special instructions for __Digitale Hovedstrømninger__
+# Special instructions for _Digitale Hovedstrømninger_
 
-The TEI-encoded texts of Brandes' __Hovedstrømninger__ can be quite easily 
+The TEI-encoded texts of Brandes' _Hovedstrømninger_ can be quite easily 
 imported and indexed for concordance, KWIC, co-occurrence and time-series 
 searching and visualization with Philologic 4.6.
 
-This forked repository differs from the stock Philologic 4.6 software only by 
-the presence of the `corpora/brandes/` folder, which contains the configuration
-files and very slightly modified versions of the TEI-encoded 
-__Hovedstrømninger__ texts (see below) that should be used to provision the 
-site, and in two minor code edits necessary to extend the Philologic 
+This forked repository differs from the stock Philologic 4.6 software in two
+ways:
+
+- by the presence of the `corpora/brandes/` folder, which contains the 
+configuration files and very slightly modified versions of the TEI-encoded 
+_Hovedstrømninger_ texts (see below) that should be used to provision the 
+site
+
+- and in two minor code edits necessary to extend the Philologic 
 dictionary-word lookup functionality (accessed by highlighting a word in the 
 concordance or KWIC views and then pressing "d") to use the 1700-1950 Danish 
 historical dictionary.
@@ -18,8 +22,8 @@ historical dictionary.
 To make use of the dictionary-lookup modifications (see above), it is advised
 to clone this repository and then follow the standard installation instructions
 from the [documentation](https://artfl-project.github.io/PhiloLogic4/).
-As an alternative, one simply could install the the stock 4.6 version and then
-manually apply the code changes from this commit.
+As an alternative, one simply could install the the stock Philologic 4.6 and 
+then manually apply the code changes from [this commit](https://github.com/ARTFL-Project/PhiloLogic4/commit/2ffbd4b99e3eafa65e657dcd1a4dbe3957974dc3).
 
 **Install notes:** The installation instructions and system requirements are
 the same as for the stock Python3 Philologic 4.6 software. The most common 
@@ -44,12 +48,13 @@ other locations are also acceptable).
 
 To load these files into the Philologic4 installation, cd to the
 `corpora/brandes/` folder and run
-`$ philolad philoload4 -l load_config.py brandes ./*.xml
+
+`$ philolad philoload4 -l load_config.py brandes ./*.xml`
 
 After the files have been loaded, be sure to copy the `web_config.cfg` file
 from `corpora/brandes/` to the `data/` folder in the main Philologic site
-install folder; by default this will be something like 
-`/var/www/html/philologic/brandes/data/'. The site should now be ready for use.
+install folder; by default this location will be something like 
+`/var/www/html/philologic/brandes/data/`. The site should now be ready for use.
 
 ===========
 
